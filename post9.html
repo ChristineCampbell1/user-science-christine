@@ -75,17 +75,17 @@
 
 
     <!-- Page Header -->
-    <header class="masthead" style="background-image: url('img/post7/analytics.jpeg')">
+    <header class="masthead" style="background-image: url('img/post8/target3.jpeg')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-10 mx-auto">
                     <div class="post-heading">
-                        <h2>Is Anyone Out There?</h2>
-                        <h2 class="subheading">My first adventure with Google Analytics
+                        <h2>Running Tests</h2>
+                        <h2 class="subheading">A/B Tests with Google Analytics
                         </h2>
                         <span class="meta">Posted by
                             <a href="#">Christine Campbell</a>
-                            on May 23, 2020</span>
+                            on June 8, 2020</span>
                     </div>
                 </div>
             </div>
@@ -99,92 +99,68 @@
                 <div class="col-lg-8 col-md-10 mx-auto">
                   
                     <p>
-                        This week, I’m checking in on my own website - 
-                        <a href="https://www.campbellgroup.live/user-science-christine/">User Science Journal</a> - to see if anyone is visiting it. This will likely become a series of blogs, testing the analytics of my website. In this blog, I discuss the installation of a metrics tracker, my predictions about my users, and what actually happened.</p>
-
-                    <h3>Getting Ready to Measure Traffic - Adding Google Analytics</h3>
-                    <p>
-                        To measure my web traffic, I added Google Analytics. I already had a Google account so I went straight to the 
-                            <a href="https://marketingplatform.google.com/about/analytics/">Google marketing platform</a>.
-                        I created a new account and got a tracking code. I took that tracking code and pasted it under the <head> tag on each of my website’s webpages. It was a very simple process that got it up and running. A few days later, however, I received an email from Google Analytics telling me that I still need to add the tag. But when I checked, I had done all of the things they had asked me to. I decided to ignore the email.
+                        This week, I continue to check in on my own website - 
+                        <a href="https://www.campbellgroup.live/user-science-christine/">User Science Journal</a> - in a second blog to learn more about the analytics of my website. In this blog, I discuss setting up a goal and measuring how I did against that goal.
                     </p>
-                    <p>I then reached out to a few colleagues on the evening of 5/20 to have them check the page out so that there would be some action in the analytics in time for this review. </p>
-                    
-                    <h3>Pre-evaluation - Who do I expect my users to be?</h3>
+                    <br>
 
-                    <p>Considering I know who I sent my URL to, I expect that my analytics will look something like this:
+                    <h3>Setting Up a Goal In Google Analytics</h3>
+                    <p>It was surprisingly easy to set up several goals in Google Analytics. I went to my analytics page for my project and clicked on the Admin gear on the left side of the screen.
+                    </p>
+                    <a href="#">
+                        <img class="img-fluid" src="img/post8/admin.png"
+                            alt="Image of Google Analytics home page">
+                    </a>
+                    <br>
+                    <p>Once there, I went to the Goals button on the right.</p>
+                    <a href="#">
+                        <img class="img-fluid" src="img/post8/goals.png"
+                            alt="Image of Google Analytics Goals button">
+                    </a>
+                    <br>
+                    <br>
+                    It was very easy then to set up several goals. Since this is a blog website, I decided I’d like to set 2 goals that would show whether there was interest in my blog:
                     </p>
                     <ul style="list-style-type:disc"></ul>
-                    <li><b>Demographics: </b>between 20-50, mostly female</li>
-                    <li><b>Location:</b> most will be in the United States</li>
-                    <li><b>Acquisition:</b> most will come directly by typing in the URL to the home page</li>
-                    <li><b>Location:</b> most will be in the United States</li>
-                    <li><b>Browser:</b> most will come from Chrome</li>
-                    <li><b>Device:</b> an even split between desktop and mobile</li>
-                    <br>
-                    <br>
-                    <h3>Evaluation - What does my web traffic look like?</h3>
-                    <br>
-                    <h4>Audience</h4>
-                    <p>As shown in the graphic below, I had no visitors until I shared my URL with colleagues who in turn also shared it with friends. Beginning on 5/20, I have 12 users, all of them new. The average session duration was 1:16 minutes, and the bounce rate was 38.46%. This low bounce rate is likely because they were all exploring the page, rather than searching for something and coming to the page and deciding if they liked what they found. They were more forgiving! 
+                    <li><b>Duration: </b>Having visitors spend at least 3 minutes on the site.</li>
+                    <li><b>Destination:</b> Having visitors go to at least 2 pages when they visit.</li>
+                    
+                    <p>By clicking on the red button for New Goals, it took just 3 steps to set up the goals. For my project, I chose Custom, Duration, and then set the goal for 3 minutes.
+                    </p>
+                    <p>I repeated the steps for Pages/Screens per view and selected 2.
                     </p>
                     <a href="#">
-                        <img class="img-fluid" src="img/post7/audience.png"
-                            alt="Image of charts showing audience statistics">
+                        <img class="img-fluid" src="img/post8/setup.png"
+                            alt="Image of set up steps">
+                    </a>
+                    <p>Then I prodded some friends to explore the site and waited a day.
+                    </p>
+                   
+                    <h3>Checking on my Goals</h3>
+                    <p>I was a little late in getting started on my project this week, so I only had one day after nudging friends to gather some new analytics.</p>
+                    <p>To view them, I went to Conversions > Overview.</p>
+                    <p>I had 3 goal completions:</p>
+                    <ul style="list-style-type:disc"></ul>
+                    <li>1 completion of Blog test 1 = staying on the site for 3 minutes</li>
+                    <li>2 completions of my second test “user science journal pages” which was to have people visit at least 2 pages</li>
+                    <p>The format of how the goals are presented is shown in the image below.</p>
+                    
+                    <a href="#">
+                        <img class="img-fluid" src="img/post8/conversions.png"
+                            alt="Image of chart showing conversion statistics">
                     </a>
                     <br>
-                    <br>
-                    <h4>Demographics</h4>
-                    <p>I went to get a closer look at my visitors by looking at the demographics report within the audience report. However, it showed me that I had no information there. At first I was concerned that I hadn’t properly set up the demographics feature, but after consultation, I learned that Google Analytics will not share demographic data when the number of users is below a certain threshold where their identity might be revealed. In the graphic below, the fields for age and gender remained empty.
+                    <p>A closer look shows me that the pages people visited were the home page, about page and blog post 2.
                     </p>
                     <a href="#">
-                        <img class="img-fluid" src="img/post7/demographics.png"
-                            alt="Image of charts showing demographic statistics">
+                        <img class="img-fluid" src="img/post8/pages.png"
+                            alt="Image of table showing pages visited">
                     </a>
-                    <br>
-                    <br>
-                    <br>
-                    <h4>Device</h4>
-                    <p>As predicted, my users are very evenly split between mobile and desktop users. (I sent my URL to some college age users and some older users, and expected the younger users to use their phones.) The bounce rate on desktop users was 50% and the bounce rate on mobile devices was 28.57%. This is good news since I know that more internet activity is happening on phones and that users are not finding the page to be challenging. The average session for desktop users was longer, however, signaling more of readiness to read/skim the blogs. I imagine the mobile users quickly scrolled through.
-                    </p>
-                    <a href="#">
-                        <img class="img-fluid" src="img/post7/device.png"
-                            alt="Image of charts showing device statistics">
-                    </a>
-                    <br>
-                    <br>
-                    <br>
-                    <h3>Acquisition</h3>
-                    <p>Not surprisingly, all of my visitors came to the site using the direct URL: I shared the link and they clicked on it.</p>
-                    <p>They also mostly visited the site on one day- the same day I shared the URL. The remaining users may have just left the site open on their page.</p>
-                    <a href="#">
-                        <img class="img-fluid" src="img/post7/acquisition.png"
-                            alt="Image of charts showing acquisition statistics">
-                    </a>
-                    <br>
-                    <br>
-                    <br>
-                    <h3>Behavior</h3>
-                    <p>The 12 users visited 84 page views combined, 37 of them are unique page views. Most views - 57% - were to the home page. The next highest pages visited were blog post 1 and blog post 6, and then the About page.
-                    </p>
-                    <a href="#">
-                        <img class="img-fluid" src="img/post7/behavior.png"
-                            alt="Image of charts showing acquisition statistics">
-                    </a>
-                    <br>
-                    <br>
-                    <h4>Behavior Flow</h4>
-                    <p>Most users (11) start on the home page. They then commonly go to post 1. From there, some return to home (2), go to post 2 (2) or about (1) or post 3 (1). Four users continued to explore from there.
-                    </p>
-                    <a href="#">
-                        <img class="img-fluid" src="img/post7/flow.png"
-                            alt="Image of charts showing acquisition statistics">
-                    </a>
-                    <br>
                     <br>
                     <br>
                     <h3>Conclusion</h3>
-                    <p>After sharing the URL for several days, I can say that I have some nice colleagues who were willing to explore it and share it with a few friends. They were curious about the page and checked out several blogs and learned more about me. There are a number of things I can do to publicize the page that I haven’t been doing yet, including sharing my blogs on social media with links back to the page. Google Analytics is a great window into how visitors use the page and it inspires me to want to learn a lot more about SEO.
+                    <p>Setting goals in Google Analytics is a great way to start learning about what works on the website. Including interesting links and driving traffic to the page through other social media would probably push my numbers higher. Installing and tracking the analytics was very easy, which is great-it means that I’m more likely to use this function on a regular basis.
+
                     </p>
                 </div>
             </div>
