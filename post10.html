@@ -3,14 +3,17 @@
 
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-167311943-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167311943-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-167311943-1');
-</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-167311943-1');
+    </script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -76,17 +79,17 @@
 
 
     <!-- Page Header -->
-    <header class="masthead" style="background-image: url('img/post9/AB2.png')">
+    <header class="masthead" style="background-image: url('img/post10/analytics.jpeg')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-10 mx-auto">
                     <div class="post-heading">
-                        <h2>Running Tests</h2>
-                        <h2 class="subheading">A/B Tests with Google Analytics
+                        <h2>Just Scratching The Surface</h2>
+                        <h2 class="subheading">Making Use of Analytics
                         </h2>
                         <span class="meta">Posted by
                             <a href="#">Christine Campbell</a>
-                            on June 7, 2020</span>
+                            on June 12, 2020</span>
                     </div>
                 </div>
             </div>
@@ -98,56 +101,129 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-10 mx-auto">
-                  
-                    <p>
-                        This week concludes the analytic testing of my website  - 
-                        <a href="https://www.campbellgroup.live/user-science-christine/">User Science Journal</a> In this third and final blog, I set up an experiment to test whether changing a feature on my website will lead visitors to stay longer and explore more blog posts. This blog discusses how I set up the test and what I learned from it. 
 
+                    <p>Part of having a website, of putting ideas or products out into the world, is to have people
+                        visit. It may be obvious to the web designer what the point is--buy clothes or read and respond to
+                        blogs -- but that may not be what is happening when users come to the page. Google Analytics and Optimize are very helpful tools for web developers to know whether
+                        visitors are engaging as expected. And if they aren’t, it allows us to experiment with additions
+                        and subtractions to help users get where we hope they should go.
                     </p>
+                    <H3>Defining goals and setting them up in Google Analytics</H3>
+                    <p>
+                        My website -
+                        <a href="https://www.campbellgroup.live/user-science-christine/">User Science Journal</a> - is a
+                        series of blogs on user experience. My goal was to get users to visit and spend time on the
+                        website and read some blogs. More specifically, I chose the following 2 goals:
+                    </p>
+                    </p>
+                    <ul style="list-style-type:disc"></ul>
+                    <li><b>Duration: </b>Having visitors spend at least 3 minutes on the site.</li>
+                    <li><b>Destination:</b> Having visitors go to at least 2 pages when they visit.</li>
+                    <br>
+                    <br>
+                    <h3>Setting Up a Goal In Google Analytics</h3>
+                    <p>It was surprisingly easy to set up several goals in Google Analytics. I went to my analytics page
+                        for my project and clicked on the Admin gear on the left side of the screen.
+                    </p>
+                    <a href="#">
+                        <img class="img-fluid" src="img/post8/admin.png" alt="Image of Google Analytics home page">
+                    </a>
+                    <br>
+                    <p>Once there, I went to the Goals button on the right.</p>
+                    <a href="#">
+                        <img class="img-fluid" src="img/post8/goals.png" alt="Image of Google Analytics Goals button">
+                    </a>
+                    <br>
                     <br>
 
-                    <h3>Create a hypothesis</h3>
-                    <p>Before running any experiments, it’s important to first identify a problem and then create a hypothesis about what I can change to improve it.
+                    <p>By clicking on the red button for New Goals, it took just 3 steps to set up the goals. For my
+                        project, I chose Custom, Duration, and then set the goal for 3 minutes.
                     </p>
-                    <p>Last week I had 3 goal completions:</p>
+                    <p>I repeated the steps for Pages/Screens per view and selected 2.
+                    </p>
+                    <a href="#">
+                        <img class="img-fluid" src="img/post8/setup.png" alt="Image of set up steps">
+                    </a>
+                    <br>
+                    <br>
+                    <br>
+                    <h3>Tracking my experiment</h3>
+                    
+                    <p>I waited a week and reviewed the activity. Last week I had 3 goal completions:
                     <ul style="list-style-type:disc"></ul>
                     <li>1 completion of Blog test 1 = staying on the site for 3 minutes</li>
-                    <li>2 completions of my second test “user science journal pages” which was to have people visit at least 2 pages</li>
-                    
+                    <li>2 completions of my second test “user science journal pages” which was to have people visit at
+                        least 2 pages</li>
+                    </p>
+
                     <a href="#">
                         <img class="img-fluid" src="img/post8/conversions.png"
                             alt="Image of chart showing conversion statistics">
                     </a>
                     <br>
-                    <p>A closer look shows me that the pages people visited were the home page, about page and blog post 2.
+                    <p>A closer look showed me that the pages people visited were the home page, about page and blog post
+                        2.
                     </p>
                     <a href="#">
-                        <img class="img-fluid" src="img/post8/pages.png"
-                            alt="Image of table showing pages visited">
+                        <img class="img-fluid" src="img/post8/pages.png" alt="Image of table showing pages visited">
                     </a>
-                    <p>With this blogging website, my aim to is to have people visit and read the blogs. It seemed strange to me that Blog post 1 wasn't getting traffic or taking people to the next blog. I realized on closer viewing that some of my blog posts had a link to “home” at the top to get readers back to the home page for another view, but my first few blog posts were missing that. I got a little ahead of myself and fixed it and then nudged my visitors to visit again. It was only then that I realized I should have waited to fix it as my test--does adding the button for home get people to stay longer and read more blogs?</p>
-                    <p>For this activity, my hypothesis and test had to be a little backward--the test would be to recreate the problem and see if people spent less time on the page without the fix.
+                    <p>With this blogging website, my aim is to have people visit and read the blogs. It seemed strange
+                        to me that Blog post 1 wasn't getting traffic or taking people to the next blog. I realized on
+                        closer viewing that some of my blog posts had a link to “home” at the top to get readers back to
+                        the home page for another view, but my first few blog posts were missing that. I got a little
+                        ahead of myself and fixed it and then nudged my visitors to visit again. It was only then that I
+                        realized I should have waited to fix it as my test--does adding the button for home get people
+                        to stay longer and read more blogs?</p>
+                    <p>For this activity, my hypothesis and test had to be a little backward--the test would be to
+                        recreate the problem and see if people spent less time on the page without the fix.
 
-                    <h3>Create an A/B test</h3>
-                    <p>In my experiment, I decided to test removing a home page button from the first blog post.</p>
-                    <p>I created an Optimize account and created a new experiment: removing the home button.
-                    </p>
-                    <p>I set up a variant to test a blog page without the home page link. And I targeted it to go to people in Seattle at 50% weight--half of my viewers would see it with the home page and half without.</p>
-                    <p>I set my objectives to be the same as last week's goals: </p>
-                    <ul style="list-style-type:disc"></ul>
-                    <li>1 completion of Blog test 1 = staying on the site for 3 minutes</li>
-                    <li>2 completions of my second test “user science journal pages” which was to have people visit at least 2 pages</li>
-                   
-                    <p>Then I gave my viewers a nudge.</p>
-                    
-                    <br>
-                    <h3>Outcomes</h3>
-                    <p>I am still waiting for data. I started the experiment late on Sunday morning and I’m waiting on data! I may be able to get data by the evening, but if not, I may just have to update this page later this week.</p>
+                        <h3>Create an A/B test</h3>
+                        <p>For this A/B test, I decided to see whether removing a home page button from the first blog post would cause people to leave the page and not explore the rest of the website.</p>
+                        <p>I created an Optimize account and created a new experiment: removing the home button.
+                        </p>
+                        <p>I set up a variant to test a blog page without the home page link. And I targeted it to go to
+                            people in Seattle at 50% weight--half of my viewers would see it with the home page button on Blog 1 and half would not see it.</p>
+                        <p>I set my objectives to be the same as last week's goals: </p>
+                        <ul style="list-style-type:disc"></ul>
+                        <li>1 completion of Blog test 1 = staying on the site for 3 minutes</li>
+                        <li>2 completions of my second test “user science journal pages” which was to have people visit
+                            at least 2 pages</li>
+
+                        <p>I had a little trouble getting Optimize to run. I realized after waiting several days and
+                            having my users test, that I wasn’t getting any variation in the “home” button. It was
+                            always there! I then noticed that my experiment wasn’t running because I hadn’t added the
+                            Optimize snippet to my code. It took me a while to find the specific container ID that
+                            I needed to add. It had come in an email, but it was 10 characters long and the instructions
+                            were to use a 9 character code. I tried it anyway, finally remembered to commit and push the
+                            code to my repo, and after much trial and error on my part, it was finally working.
+                        </p>
+                        <h3>Results</h3>
+                        <p>My hypothesis was that if a user went to a blog page but had no simple way of getting back
+                            home to review the list of other blogs, that they would bounce.
+                        </p>
+                        <p>My experiment showed that while I was able to get the Optimize tool to work I didn't get enough user
+                            input to find a clear leader.</p>
                         <a href="#">
-                            <img class="img-fluid" src="img/post9/report.png"
-                                alt="Image of Google Optimize report page">
+                            <img class="img-fluid" src="img/post10/leader.png" alt="Image of Optimize findings">
                         </a>
-                    </p>
+                        <p>A closer look showed that I had 3 session visits by users, and that I had one experiment
+                            conversion with the original version (with the Home button present) and 0 conversions with
+                            the varient (no Home button). See the figure below. With so few users, it's hard to know
+                            whether having the Home button missing on the first blog impacted their visit. But it doesn't hurt to have it, so I will end the test and make sure that it is visible again.
+                        </p>
+                        <a href="#">
+                            <img class="img-fluid" src="img/post10/test.png" alt="Image of Optimize findings">
+                        </a>
+                        <p>My next steps to optimize my page would be to promote it more on social media and to add some
+                            features that would engage visitors, such as comments sections for each blog, and a way for
+                            visitors to sign up to get the blogs sent to them in an email when they get published.
+                        </p>
+                        <h3>Conclusion</h3>
+                        <p>Spending time in Google Analytics and Optimize shows me just how sophisticated and nuanced
+                        tracking user data can be. Whether learning about who comes to the site, or how to navigate the site better when they are there, there’s a lot of data that can be collected to
+                        make sure visitors are easily moving around the site, engaging and hearing from me when they are not on
+                        the site.
+                        </p>
                 </div>
             </div>
         </div>
